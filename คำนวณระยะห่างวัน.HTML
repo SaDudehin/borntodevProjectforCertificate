@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&display=swap" rel="stylesheet">
+    <title>เว็ปคำนวณระยะเวลา</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&display=swap');
+        body {
+            background-color: rgb(209, 209, 209);
+            font-family: 'Bai Jamjuree', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 1.2%;
+            padding-bottom: 1.2%;
+            background-color: rgb(161, 161, 161);
+        }
+
+        line {
+            padding-right: 750px;
+            border-bottom: 2px solid grey;
+        }
+
+        input {
+            padding: 0%;
+        }
+        div {text-align: center;}
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>.: คำนวณเวลา (หน่วย วัน/เดือน/ปี) :.</h1>
+        <h3>ตั้งแต่ (วว/ดด/ปปปป)</h3>
+        <section>
+            <input type="number" placeholder="วันที่เริ่ม" id='input_d_s' class> /  </input>
+            <input type="number" placeholder="เดือนที่เริ่ม" id='input_m_s'> /  </input>
+            <input type="number" placeholder="ปีที่เริ่ม" id='input_y_s'>  </input>
+            <h3>จนถึง (วว/ดด/ปปปป)</h3>
+            <input type="number" placeholder="วันที่หยุด" id='input_d_e' class> /  </input>
+            <input type="number" placeholder="เดือนที่หยุด" id='input_m_e'> /  </input>
+            <input type="number" placeholder="ปีที่หยุด" id='input_y_e'></input>
+            <br><br>
+            <button onclick="convert()">คำนวณ</button>
+            
+        </section>
+        <line></line>
+        <br>
+        <h3>คิดเป็นระยะเวลา</h3>
+        <result>
+            <ans id="result_sum_year">0</ans><br>
+            <h5>หรือ</h5>
+            <ans id="result_sum_month">0</ans><br>
+            <h5>หรือ</h5>
+            <ans id="result_sum_day">0</ans><br>
+            <h5>หรือคิดเป็น</h5>
+            <ans id="result_year">0</ans>
+            <ans id="result_month">0</ans>
+            <ans id="result_day" class ='bigger'>0</ans>
+        </result><br>
+        <line></line>
+    </div>
+
+    <script src="คำนวณระยะห่างวัน.js"></script>
+</body>
+
+
+
+
+<!--<body>
+
+    <div>
+        <h1>Convert from years to days</h1>
+        <div>
+            <section>
+                <input type="number" placeholder="Put year here" id='input_y'> year</input>
+                </br>
+                <input type="number" placeholder="AAAA" id='input_m'> month</input>
+                </br>
+                <input type="number" placeholder="AAAA" id='input_d'> day</input>
+            </section>
+            </br>
+            <button id="get_ans" onclick="convert()">Convert</button>
+
+            <section>
+                <show_ans type="number" id='iput_y'></show_ans>
+                <unit> years</unit>
+                </br>
+                <show_ans>or </show_ans>
+            </br>
+                <show_ans type="number" id='iput_m'> </show_ans>
+                <unit> months</unit>
+                </br>
+                <show_ans>or </show_ans>
+            </br>
+                <show_ans type="number" id='iput_d'> </show_ans>
+                <unit> days</unit>
+                
+                <br><br>
+                <show_ans>or </show_ans>
+                <show_ans type="number" id='put_y'></show_ans>
+                <unit> years </unit>
+               
+                <show_ans type="number" id='put_m'> </show_ans>
+                <unit> months </unit>
+                
+                <show_ans type="number" id='put_d'> </show_ans>
+                <unit> days </unit>
+            </section>
+        </div>
+    </div>
+
+    <script src="121265 copy.js"></script>
+</body>-->
+
+</html>
